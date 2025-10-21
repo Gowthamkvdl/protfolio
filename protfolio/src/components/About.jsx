@@ -1,13 +1,15 @@
 import { Container, Row, Col, Image } from "react-bootstrap";
 import profile from "../assets/image.png"; // make sure to add your profile image in the specified path
+import { FaUser } from "react-icons/fa";
 
 function About() {
+
   return (
-    <section id="aboutCom" className="py-5 py-md-5"> 
+    <section id="aboutCom" className="pb-5 pb-md-5">
       <Container>
-        <Row className="align-items-center justify-content-center my-5"> 
-          
-          <Col md={4} className="text-center mb-4 mb-md-0">
+        <Row className="align-items-center justify-content-center my-5">
+
+          <Col md={6} lg={4} className="text-center text-md-start mb-4 mb-md-0">
             <Image
               src={profile}
               fluid
@@ -17,15 +19,22 @@ function About() {
             />
           </Col>
 
-          <Col md={8}>
-            <h2 className="mb-4">About Me</h2> 
-            
+          <Col md={6} lg={8}>
+            <h2 className="mb-4 d-flex align-items-center">
+              <FaUser
+                size={30}
+                className="me-3 text-primary"
+                style={{ verticalAlign: 'middle' }}
+              />
+              About Me
+            </h2>
+
             <p className="lead">
-              Hi, I'm <strong>G</strong>, a final-year <strong>Computer Science Engineering</strong> student and a
+              Hi, I'm <strong>Gowtham</strong>, a final-year <strong>Computer Science Engineering</strong> student and a
               passionate <strong>MERN Stack Developer</strong>. I enjoy building responsive, scalable web
               applications and constantly improving my development and problem-solving skills.
             </p>
-            <ul> 
+            <ul>
               <li>
                 I’ve worked on full-stack projects such as a <strong>Tourist Bus Listing Platform</strong>,
                 a <strong>Catering Professionals Platform</strong>, and my college’s

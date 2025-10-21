@@ -2,12 +2,20 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 // You will need to install this package: npm install react-icons
 import { FaLinkedinIn, FaGithub, FaEnvelope } from 'react-icons/fa';
+import { SiGmail } from 'react-icons/si';
 
 function Contact() {
   return (
-    <section  className="py-5 py-md-5">
+    <section className="py-5 py-md-5 mt-3">
       <Container className="text-center">
-        <h2 className="mb-4">Get In Touch</h2>
+        <h2 className="mb-4 text-center d-flex align-items-center justify-content-center">
+          <SiGmail
+            size={30}
+            className="me-3 text-primary"
+            style={{ verticalAlign: 'middle' }}
+          />
+          Get In Touch
+        </h2>
         <p className="lead mb-5">
           I'm actively seeking new opportunities. Feel free to connect directly on LinkedIn, explore my code, or send me an email.
         </p>

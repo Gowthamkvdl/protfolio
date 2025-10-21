@@ -3,13 +3,18 @@ import bus from "../assets/bus.png";
 import clg from "../assets/clg.png";
 import catering from "../assets/catering.png";
 import { useState } from "react";
+import { SiGitkraken } from "react-icons/si";
 
 function Projects() {
   const projects = [
     {
       title: "Tourist Buses Listing Platform",
       stack: "MERN Stack, Bootstrap",
-      desc: "Developed a city-based bus listing platform featuring OTP-based login, real-time WhatsApp contact CTA, and an admin approval system.",
+      desc: (
+        <>
+          Developed a secure, city-based bus listing platform, implementing <span className="fw-bold">OTP-based authentication</span> and an admin approval system. It was designed with an <span className="fw-bold">SEO-friendly UI</span> and includes features for real-time contact via <span className="fw-bold">WhatsApp CTA</span> and planned monetization through listing fees.
+        </>
+      ),
       demoLink: "https://touristbus.onrender.com/",
       codeLink: "https://github.com/Gowthamkvdl/tourist_bus",
       img: bus
@@ -17,7 +22,11 @@ function Projects() {
     {
       title: "Official University College Website",
       stack: "PHP, MySQL, HTML, CSS, JavaScript, Bootstrap",
-      desc: "Built the official college website with database-driven content updates, grievance redressal, announcements, and an admin panel.",
+      desc: (
+        <>
+          Served as the <span className="fw-bold">Lead Developer</span> to build the official college website (PHP/MySQL), integrating database-driven content updates, grievance redressal, and an admin panel. The platform manages events and announcements for the entire campus community.
+        </>
+      ),
       demoLink: "https://www.aucetk.edu.in/",
       codeLink: "https://www.aucetk.edu.in/",
       img: clg
@@ -25,19 +34,30 @@ function Projects() {
     {
       title: "Catering Boys",
       stack: "MERN Stack, Bootstrap",
-      desc: "Developed a platform to connect catering professionals with event organizers, featuring secure user authentication and a star-rating system.",
+      desc: (
+        <>
+          Designed and developed a <span className="fw-bold">MERN stack platform</span> to connect catering professionals with event organizers. Key features include secure user authentication, a <span className="fw-bold">star-rating system</span>, and a real-time <span className="fw-bold">WhatsApp CTA for faster hiring</span> and connections.
+        </>
+      ),
       demoLink: "https://cateringboys0.onrender.com/",
       codeLink: "https://github.com/Gowthamkvdl/catring_project_rebirth",
       img: catering
     }
-  ];
+  ]
 
-  const [hoverIndex, setHoverIndex] = useState(null);
+  const [hoverIndex, setHoverIndex] = useState(null);  
 
   return (
-    <section  className="py-5">
+    <section className="py-5">
       <Container>
-        <h2 className="text-center mb-5">Projects</h2>
+        <h2 className="text-center mb-5 d-flex align-items-center justify-content-center">
+          <SiGitkraken
+            size={30}
+            className="me-3 text-primary"
+            style={{ verticalAlign: 'middle' }}
+          />
+          Projects
+        </h2>
         <Row className="justify-content-center">
           {projects.map((p, idx) => (
             <Col md={4} key={idx} className="mb-3">
@@ -68,7 +88,7 @@ function Projects() {
                     {p.stack}
                   </Card.Subtitle>
 
-                  <Card.Text className="mb-4">{p.desc}</Card.Text>
+                  <Card.Text className="mb-4"><div>{p.desc}</div></Card.Text>
 
                   {/* Buttons with visual hierarchy */}
                   <div className={`d-flex justify-content-end `}>
