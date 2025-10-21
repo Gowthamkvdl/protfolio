@@ -4,7 +4,7 @@ import resume from "../assets/gowtham.pdf"
 
 function Hero() {
   return (
-    <section className="d-flex align-items-center text-center container-fluid pt-5">
+    <section className="d-flex align-items-center text-center container-fluid pt-5 vh-100">
 
       <Container>
 
