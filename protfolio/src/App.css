@@ -11,3 +11,62 @@
       linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
   background-size: 55px 55px;
 }
+
+.btn-fancy {
+    position: relative;
+    overflow: hidden;
+    z-index: 1; /* Ensures text is on top */
+}
+
+.btn-fancy::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #0088cc; /* A slightly darker shade of your button color */
+    transition: width 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.btn-fancy:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.profile-filter-shadow {
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+    transition: filter 0.4s ease-in-out; 
+}
+
+.profile-filter-shadow:hover {
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.75));
+}
+
+/* Target the unordered list within the About section */
+#aboutCom ul {
+    list-style: none; /* Remove the default bullet */
+    padding-left: 0; 
+    margin-top: 1rem; /* Add some space above the list */
+}
+
+#aboutCom ul li {
+    position: relative;
+    padding-left: 20px; /* Space for the new icon */
+    margin-bottom: 0.5rem; /* Space between list items */
+}
+
+#aboutCom ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px; /* Adjust vertical alignment */
+    width: 12px;
+    height: 12px;
+    /* Option A: Use a checkmark SVG */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23007BFF' d='M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z'/%3E%3C/svg%3E");
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+}
