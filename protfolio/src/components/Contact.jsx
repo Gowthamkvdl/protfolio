@@ -26,7 +26,7 @@ function Contact() {
             <Button
               variant="primary"
               size="lg"
-              href="https://linkedin.com/in/gowthamkvdi" // From resume [cite: 2]
+              href="https://linkedin.com/in/gowthamkvdl" // From resume [cite: 2]
               target="_blank"
               className="w-100"
             >
