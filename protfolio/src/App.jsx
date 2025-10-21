@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css"
 import AppNavbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
@@ -8,13 +9,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <div>
+    <div className="bg" >
       {/* Navbar */}
       <AppNavbar />
 
       {/* Hero Section */}
       <Hero />
 
+      {/* {About} */}
       <About />
 
       {/* Projects */}
