@@ -8,7 +8,7 @@ import { SiGitkraken } from "react-icons/si";
 function Projects() {
   const projects = [
     {
-      title: "Tourist Buses Listing Platform",
+      title: "MERN Stack Service Listing with OTP Authentication",
       stack: "MERN Stack, Bootstrap",
       desc: (
         <>
@@ -20,7 +20,7 @@ function Projects() {
       img: bus
     },
     {
-      title: "Official University College Website",
+      title: "Lead-Developed University Content & Grievance System (PHP/MySQL)",
       stack: "PHP, MySQL, HTML, CSS, JavaScript, Bootstrap",
       desc: (
         <>
@@ -32,7 +32,7 @@ function Projects() {
       img: clg
     },
     {
-      title: "Catering Boys",
+      title: "MERN Marketplace for Catering Professionals",
       stack: "MERN Stack, Bootstrap",
       desc: (
         <>
@@ -44,6 +44,8 @@ function Projects() {
       img: catering
     }
   ]
+
+
 
   const [hoverIndex, setHoverIndex] = useState(null);  
 
