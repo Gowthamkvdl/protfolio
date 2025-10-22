@@ -10,8 +10,8 @@ function Contact() {
       <Container className="text-center">
         <h2 className="mb-4 text-center d-flex align-items-center justify-content-center">
           <SiGmail
-            size={30}
-            className="me-3 text-primary"
+            size={35}
+            className="me-2 text-primary"
             style={{ verticalAlign: 'middle' }}
           />
           Get In Touch

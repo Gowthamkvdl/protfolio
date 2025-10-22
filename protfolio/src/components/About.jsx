@@ -22,8 +22,8 @@ function About() {
           <Col md={6} lg={8}>
             <h2 className="mb-4 d-flex align-items-center">
               <FaUser
-                size={30}
-                className="me-3 text-primary"
+                size={35}
+                className="me-2 text-primary"
                 style={{ verticalAlign: 'middle' }}
               />
               About Me

@@ -28,7 +28,7 @@ function Projects() {
         </>
       ),
       demoLink: "https://www.aucetk.edu.in/",
-      codeLink: "https://www.aucetk.edu.in/",
+      codeLink: "https://www.aucetk.edu.in/pages/web.html",
       img: clg
     },
     {
@@ -54,8 +54,8 @@ function Projects() {
       <Container>
         <h2 className="text-center mb-5 d-flex align-items-center justify-content-center">
           <SiGitkraken
-            size={30}
-            className="me-3 text-primary"
+            size={35}
+            className="me-2 text-primary"
             style={{ verticalAlign: 'middle' }}
           />
           Projects
@@ -97,13 +97,24 @@ function Projects() {
                     <Button
                       variant="dark"                               // Secondary: Dark for code
                       href={p.codeLink}
-                      className={`me-2 ${p.title == "Official University College Website" ? "d-none" : ""} `}
+                      className={`me-2 ${p.demoLink == "https://www.aucetk.edu.in/" ? "d-none" : ""} `}
                       target="_blank"
                     >
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash me-1 pb-1" viewBox="0 0 16 16">
                         <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
                       </svg>
                       View Code
+                    </Button>
+                    <Button
+                      variant="dark"                               // Secondary: Dark for code
+                      href={p.codeLink}
+                      className={`me-2 ${p.demoLink == "https://www.aucetk.edu.in/" ? "" : "d-none"} `}
+                      target="_blank"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash me-1 pb-1" viewBox="0 0 16 16">
+                        <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
+                      </svg>
+                      Web Team
                     </Button>
                     <Button
                       variant="primary"                            // Primary: Blue for Demo
