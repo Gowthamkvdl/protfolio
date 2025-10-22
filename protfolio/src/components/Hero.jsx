@@ -4,7 +4,7 @@ import resume from "../assets/gowtham.pdf"
 
 function Hero() {
   return (
-    <section className="d-flex align-items-center text-center container-fluid vh-100">
+    <section style={{ minHeight: "100svh" }} className="d-flex align-items-center text-center container-fluid">
 
       <Container>
 
